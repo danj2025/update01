@@ -4,7 +4,7 @@
     system: yes
 
 - name: copy sudoers_ansible
-  copy:
+  ansibble.builtin.copy:
     src: files/sudoers_ansible
     dest: /etc/sudoers.d/ansible
     owner: root
