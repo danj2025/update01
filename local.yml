@@ -12,3 +12,5 @@
     - name: include tasks file
       ansible.builtin.include_tasks:
         file: tasks/packages.yml
+        file: tasks/users.yml
+        file: tasks/cron.yml
