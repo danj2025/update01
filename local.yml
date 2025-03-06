@@ -9,8 +9,12 @@
       changed_when: False
 
   tasks:
-    - name: include tasks file
+    - name: include pakcages file
       ansible.builtin.include_tasks:
         file: tasks/packages.yml
+    - name: include users file
+      ansible.builtin.include_tasks:
         file: tasks/users.yml
+    - name: include cron file
+      ansible.builtin.include_tasks:
         file: tasks/cron.yml
