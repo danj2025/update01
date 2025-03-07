@@ -3,7 +3,3 @@
     name: Install packages
       - htop
       - mc
-- name: Remove packages
-  apt:
-    pkg: mc
-    state: absent
